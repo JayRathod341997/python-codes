@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────
+# pyproject.toml — Modern Python project config
+# Created automatically by: uv init
+# ─────────────────────────────────────────────
+
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "A sample Python project"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+    "httpx>=0.24.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+    "black>=23.0.0",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.black]
+line-length = 88

@@ -1,0 +1,8 @@
+# ─────────────────────────────────────────────
+# requirements.txt — Production dependencies
+# Install with: pip install -r requirements.txt
+# ─────────────────────────────────────────────
+
+requests==2.31.0
+httpx>=0.24.0
+rich>=13.0.0

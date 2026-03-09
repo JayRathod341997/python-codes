@@ -1,0 +1,5 @@
+Line 1: The quick brown fox
+Line 2: jumps over the lazy dog
+Line 3: Python file handling
+Line 4: Read, Write, Append
+Line 5: End of file
