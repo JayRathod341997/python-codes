@@ -58,13 +58,13 @@ catalog = [
 by_price = sorted(catalog, key=lambda x: x[1])
 print("By price (asc) :")
 for item in by_price:
-    print(f"  {item[0]:<15} ${item[1]:<8} ★{item[2]}")
+    print(f"  {item[0]:<15} ${item[1]:<8} ★ {item[2]}")
 
 # Sort by rating descending
 by_rating = sorted(catalog, key=lambda x: x[2], reverse=True)
 print("\nBy rating (desc):")
 for item in by_rating:
-    print(f"  {item[0]:<15} ${item[1]:<8} ★{item[2]}")
+    print(f"  {item[0]:<15} ${item[1]:<8} ★ {item[2]}")
 
 # ============================================================
 #  Multi-key sorting — primary & secondary sort

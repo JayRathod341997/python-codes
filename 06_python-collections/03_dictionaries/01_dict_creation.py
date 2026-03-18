@@ -11,9 +11,9 @@ print("=== Creating Dictionaries ===")
 
 # 1. Literal with curly braces
 user = {
-    "name"    : "Alice Johnson",
-    "email"   : "alice@example.com",
-    "age"     : 28,
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "age": 28,
     "verified": True,
 }
 print("1. Literal:", user)
@@ -23,7 +23,7 @@ config = dict(host="localhost", port=5432, database="appdb")
 print("2. dict()  :", config)
 
 # 3. dict() from list of (key, value) pairs
-fields  = [("username", "alice99"), ("country", "India"), ("plan", "premium")]
+fields = [("username", "alice99"), ("country", "India"), ("plan", "premium")]
 profile = dict(fields)
 print("3. From pairs:", profile)
 
@@ -37,18 +37,18 @@ permissions = dict.fromkeys(["read", "write", "delete", "admin"], False)
 print("5. fromkeys()   :", permissions)
 
 # Grant permissions
-permissions["read"]  = True
+permissions["read"] = True
 permissions["write"] = True
 print("   After update :", permissions)
 
 # 6. Merging two dicts (Python 3.9+: | operator)
-base_info  = {"name": "Bob", "age": 30}
+base_info = {"name": "Bob", "age": 30}
 extra_info = {"email": "bob@example.com", "city": "Delhi"}
 
-merged = base_info | extra_info          # creates new dict
+merged = base_info | extra_info  # creates new dict
 print("6. Merged (|)  :", merged)
 
-base_info |= extra_info                  # updates in-place
+base_info |= extra_info  # updates in-place
 print("   Updated (|=) :", base_info)
 
 # ============================================================
@@ -63,18 +63,18 @@ print("Duplicate key (last wins):", d)
 
 # Keys must be HASHABLE (immutable)
 valid_keys = {
-    1        : "integer key",
-    "hello"  : "string key",
-    (1, 2)   : "tuple key",
-    True     : "bool key",
+    1: "integer key",
+    "hello": "string key",
+    (1, 2): "tuple key",
+    True: "bool key",
 }
 print("Valid key types:", list(valid_keys.keys()))
 
 # Values can be ANYTHING — even other dicts or lists
 complex_val = {
-    "scores"  : [85, 90, 78],
-    "address" : {"city": "Mumbai", "pin": "400001"},
-    "active"  : True,
+    "scores": [85, 90, 78],
+    "address": {"city": "Mumbai", "pin": "400001"},
+    "active": True,
 }
 print("Complex values:", complex_val)
 

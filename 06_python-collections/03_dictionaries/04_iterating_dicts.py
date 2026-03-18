@@ -119,7 +119,7 @@ print("Uppercase keys   :", upper_keys)
 print("\n=== Comparing Two Periods ===")
 
 last_year = {"Jan": 110000, "Feb": 95000, "Mar": 130000}
-this_year = {"Jan": 125000, "Feb":  98000, "Mar": 145000}
+this_year = {"Jan": 125000, "Feb":  93000, "Mar": 145000}
 
 print(f"  {'Month':<6}  {'Last Year':>12}  {'This Year':>12}  {'Growth':>8}")
 print("  " + "-" * 46)
