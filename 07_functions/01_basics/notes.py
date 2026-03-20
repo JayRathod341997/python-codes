@@ -25,8 +25,8 @@ greet()         # reusable — call as many times as needed
 def greet_user(name):
     print(f"Hello, {name}! Welcome to our platform.")
 
-greet_user("Alice")
-greet_user("Bob")
+greet_user("jay")
+greet_user("rathod")
 
 
 # ── Multiple arguments ────────────────────────
