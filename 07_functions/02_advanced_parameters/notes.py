@@ -10,8 +10,8 @@ def transfer_money(sender, receiver, amount):
     print(f"₹{amount} sent from {sender} to {receiver}")
 
 
-transfer_money("Alice", "Bob", 5000)  # order matters!
-# transfer_money("Bob", 5000, "Alice")  # ← wrong order = wrong meaning
+transfer_money("jay", "rathod", 5000)  # order matters!
+# transfer_money("rathod", 5000, "jay")  # ← wrong order = wrong meaning
 
 
 # ── 2. Default Arguments ──────────────────────
